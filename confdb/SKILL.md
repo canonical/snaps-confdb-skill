@@ -7,4 +7,4 @@ description: How to Migrate your snaps to using ConfDB. This skill provides deta
 
 [Instructions](./CONFDB_MIGRATION_GUIDE.md).
 
-[Naming Conventions](./naming_convention.md).
+[Naming Conventions](./CONFDB_NAMING_CONVENTIONS.md).
