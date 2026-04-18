@@ -55,7 +55,7 @@ After installation the directory structure should look like:
 ~/.copilot/skills/
 └── confdb/
     ├── SKILL.md
-    └── CONFDB_MIGRATION_GUIDE.md
+    ├── CONFDB_MIGRATION_GUIDE.md
     └── CONFDB_NAMING_CONVENTIONS.md
 ```
 
