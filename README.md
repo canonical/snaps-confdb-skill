@@ -17,13 +17,17 @@ Confdb is suited to multi-snap systems where a single source of truth for config
 This skill provides GitHub Copilot with domain knowledge to help you:
 
 - Design confdb schemas and views
+- Check that schema naming conventions adhere to agreed guidelines
 - Implement custodian and observer snap hooks correctly
 - Avoid common pitfalls such as deadlocks from confdb access inside connect hooks
 - Write unit and integration tests for confdb-enabled snaps
 - Migrate existing file-based or legacy configuration to confdb
 - Troubleshoot connection, permission, and initialisation issues
 
-The skill is backed by [CONFDB_MIGRATION_GUIDE.md](confdb/CONFDB_MIGRATION_GUIDE.md), which contains patterns and examples drawn from real-world snap migrations.
+The skill is backed by:
+
+- [CONFDB_MIGRATION_GUIDE.md](confdb/CONFDB_MIGRATION_GUIDE.md) for migration patterns and implementation guidance
+- [CONFDB_NAMING_CONVENTIONS.md](confdb/CONFDB_NAMING_CONVENTIONS.md) for schema naming-convention compliance checks
 
 ## Installation
 
@@ -51,7 +55,8 @@ After installation the directory structure should look like:
 ~/.copilot/skills/
 └── confdb/
     ├── SKILL.md
-    └── CONFDB_MIGRATION_GUIDE.md
+    ├── CONFDB_MIGRATION_GUIDE.md
+    └── CONFDB_NAMING_CONVENTIONS.md
 ```
 
 Restart VS Code (or reload the Copilot extension) to pick up the new skill.
@@ -65,6 +70,9 @@ Any IDE that supports GitHub Copilot and loads skills from `~/.copilot/skills/` 
 Once installed, the skill is available automatically in Copilot Chat when working on snap projects. You can invoke it explicitly by referencing confdb topics, for example:
 
 - *"Help me design a confdb schema for sharing network configuration between snaps"*
+- *"Review this confdb schema and check naming-convention compliance"*
+- *"Do my views and interface plug names follow the naming guidelines?"*
+- *"Suggest exact renames to make this confdb schema naming-compliant"*
 - *"Write a configure hook that validates and writes to confdb"*
 - *"Why is my observer snap getting a deadlock when connecting the interface?"*
 - *"How do I write integration tests for a confdb custodian snap?"*
@@ -75,6 +83,7 @@ Once installed, the skill is available automatically in Copilot Chat when workin
 |------|-------------|
 | `confdb/SKILL.md` | Skill definition loaded by Copilot |
 | `confdb/CONFDB_MIGRATION_GUIDE.md` | Full patterns, examples, and troubleshooting reference |
+| `confdb/CONFDB_NAMING_CONVENTIONS.md` | Naming rules and checklist for validating schema, view, interface, request-path, and storage-path names |
 
 ## Further Reading
 
