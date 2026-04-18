@@ -6,3 +6,5 @@ description: How to Migrate your snaps to using ConfDB. This skill provides deta
 <!-- Tip: Use /create-skill in chat to generate content with agent assistance -->
 
 [Instructions](./CONFDB_MIGRATION_GUIDE.md).
+
+[Naming Conventions](./naming_convention.md).
