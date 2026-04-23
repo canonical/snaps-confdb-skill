@@ -24,10 +24,16 @@ This skill provides GitHub Copilot with domain knowledge to help you:
 - Migrate existing file-based or legacy configuration to confdb
 - Troubleshoot connection, permission, and initialisation issues
 
-The skill is backed by:
+The skill is backed by focused reference documents:
 
-- [CONFDB_MIGRATION_GUIDE.md](confdb/CONFDB_MIGRATION_GUIDE.md) for migration patterns and implementation guidance
-- [CONFDB_NAMING_CONVENTIONS.md](confdb/CONFDB_NAMING_CONVENTIONS.md) for schema naming-convention compliance checks
+- [CONFDB_MIGRATION_GUIDE.md](confdb/CONFDB_MIGRATION_GUIDE.md) — step-by-step migration playbook and hybrid rollout guidance
+- [CONFDB_NAMING_CONVENTIONS.md](confdb/CONFDB_NAMING_CONVENTIONS.md) — schema naming-convention compliance checks
+- [CONFDB_CONCEPTS.md](confdb/CONFDB_CONCEPTS.md) — custodian/observer pattern and connection order
+- [CONFDB_GETTING_STARTED.md](confdb/CONFDB_GETTING_STARTED.md) — enabling confdb, signing keys, schema import
+- [CONFDB_SCHEMA_DESIGN.md](confdb/CONFDB_SCHEMA_DESIGN.md) — schema structure, views, defaults, and evolution
+- [CONFDB_HOOKS.md](confdb/CONFDB_HOOKS.md) — hook implementation patterns and pitfalls
+- [CONFDB_TESTING.md](confdb/CONFDB_TESTING.md) — unit and integration testing
+- [CONFDB_TROUBLESHOOTING.md](confdb/CONFDB_TROUBLESHOOTING.md) — debugging and best practices
 
 ## Installation
 
@@ -56,7 +62,13 @@ After installation the directory structure should look like:
 └── confdb/
     ├── SKILL.md
     ├── CONFDB_MIGRATION_GUIDE.md
-    └── CONFDB_NAMING_CONVENTIONS.md
+    ├── CONFDB_NAMING_CONVENTIONS.md
+    ├── CONFDB_CONCEPTS.md
+    ├── CONFDB_GETTING_STARTED.md
+    ├── CONFDB_SCHEMA_DESIGN.md
+    ├── CONFDB_HOOKS.md
+    ├── CONFDB_TESTING.md
+    └── CONFDB_TROUBLESHOOTING.md
 ```
 
 Restart VS Code (or reload the Copilot extension) to pick up the new skill.
@@ -82,8 +94,14 @@ Once installed, the skill is available automatically in Copilot Chat when workin
 | File | Description |
 |------|-------------|
 | `confdb/SKILL.md` | Skill definition loaded by Copilot |
-| `confdb/CONFDB_MIGRATION_GUIDE.md` | Full patterns, examples, and troubleshooting reference |
-| `confdb/CONFDB_NAMING_CONVENTIONS.md` | Naming rules and checklist for validating schema, view, interface, request-path, and storage-path names |
+| `confdb/CONFDB_MIGRATION_GUIDE.md` | Step-by-step migration playbook, hybrid rollout guidance, and index of all reference docs |
+| `confdb/CONFDB_NAMING_CONVENTIONS.md` | Naming rules and compliance checklist for schema, view, plug, request-path, and storage-path names |
+| `confdb/CONFDB_CONCEPTS.md` | What confdb is, custodian/observer pattern, connection order |
+| `confdb/CONFDB_GETTING_STARTED.md` | Enabling confdb, signing keys, schema sign-and-import workflow |
+| `confdb/CONFDB_SCHEMA_DESIGN.md` | Schema structure, view design, defaults files, versioning and evolution |
+| `confdb/CONFDB_HOOKS.md` | Configure hook, connect hook, config reading, pitfalls with code examples |
+| `confdb/CONFDB_TESTING.md` | Unit tests, integration tests, snapctl-wrapper test helper |
+| `confdb/CONFDB_TROUBLESHOOTING.md` | Error messages, debugging commands, best practices summary |
 
 ## Further Reading
 
