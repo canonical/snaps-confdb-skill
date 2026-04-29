@@ -1,6 +1,23 @@
 ---
 name: confdb
-description: How to Migrate your snaps to using ConfDB. This skill provides detailed instructions and examples for migrating your configuration database, ensuring a smooth transition with minimal disruption.
+description: >
+  Guides migration and implementation of snapd ConfDB for custodian and observer
+  snaps, including schema and view design, naming compliance, hook behavior,
+  rollout strategy, assertion import/signing workflow, interface connection
+  sequencing, testing patterns, and troubleshooting of connection and
+  permission failures across multi-snap systems.
+  WHEN: migrate snap configuration to confdb, design a confdb schema, define admin and state views, check confdb naming conventions, review snapcraft.yaml plugs for confdb, implement configure hook writes, implement change-view hooks, implement observe-view hooks, avoid connect hook deadlocks, troubleshoot confdb interface connection failures, debug no custodian snap connected errors, debug view not found errors, validate storage path version prefixes, sign and import confdb-schema assertions, write unit and integration tests for confdb hooks, plan hybrid backward-compatible content-slot rollout, review confdb migration pull requests.
+license: Apache-2.0
+metadata:
+  author: Canonical
+  version: "1.0.0"
+  summary: Guidance for adopting and operating ConfDB in snaps with migration, naming, hooks, testing, and troubleshooting support.
+  tags:
+    - snaps
+    - snapd
+    - confdb
+    - configuration
+    - migration
 ---
 
 Use the documents in this skill to help developers adopt confdb in their snaps.
