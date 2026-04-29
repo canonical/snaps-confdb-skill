@@ -1,5 +1,16 @@
 # snaps-confdb-skill
 
+
+THIS REPOSITORY HAS BEEN MERGED WITH THE CANONICAL SKILLS REPOSITORY AND WILL BE ARCHIVED.
+
+PLEASE SEE 
+
+https://www.github.com/canonical/skills
+
+FOR THE LATEST VERSION
+
+
+
 An AI skill for GitHub Copilot that assists developers building snaps with [confdb](https://snapcraft.io/docs/confdb) support.
 
 ## What is Confdb?
